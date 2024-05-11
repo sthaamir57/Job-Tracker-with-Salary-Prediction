@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: rgb(32, 33, 36);
+}
+
+
+from {
+    color: #fff
+}
+
+.formEle {
+    @apply flex items-start justify-start flex-col mb-3;
+}
+
+label {
+    @apply mb-1 text-neutral-100;
+}
+
+input, select {
+
+    padding: .2em;
+
+    width: 100%; 
+    height: 32px; 
+    margin: 2px; 
+    border-radius: 4px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+
+.wrapper {
+    /* max-width: 800px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    padding: 2em 2em;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.form, .predict {
+    flex: 1;
+}
+
+.predict {
+    background-color: #545d66;
+    border-radius: calc(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.btn {
+    width: 100%;
+    padding: .6em 2em;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+/* .w-max {
+    width: 460px;
+} */
+
+.group {display: flex; flex-direction: row; gap:1em; align-items: center; justify-content: center;}
