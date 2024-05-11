@@ -8,9 +8,6 @@ const Statistics = () => {
   const [modelData, setModelData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Define your API endpoint URL (replace with your actual endpoint)
-  const url = 'http://127.0.0.1:8000/';
-
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
@@ -18,7 +15,7 @@ const Statistics = () => {
       // setError(null);
 
       try {
-        const response = await fetch('http://127.0.0.1:8000/modelData', {
+        const response = await fetch(`${import.meta.env.VITE_URL_MODEL}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
         });

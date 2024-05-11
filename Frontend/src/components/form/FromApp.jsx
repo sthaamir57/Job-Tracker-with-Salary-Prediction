@@ -44,7 +44,7 @@ function FormApp() {
     
         try {
             console.log(JSON.stringify(modifiedFormData));
-            const response = await fetch('http://127.0.0.1:8000/predict', {
+            const response = await fetch(`${import.meta.env.VITE_URL}`, {
                 method: 'POST',
                 body: JSON.stringify(modifiedFormData),
                 headers: {
