@@ -12,8 +12,7 @@ import math
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173/predict",
-    "http://localhost:5173"
+    "https://job-tracker-with-salary-prediction.netlify.app/",
 ]
 
 app.add_middleware(
